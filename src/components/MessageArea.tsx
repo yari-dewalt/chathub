@@ -102,7 +102,6 @@ function MessageArea({ conversationData, messages, handleMessages }) {
 
       const content = await response.json();
       content.sent = true;
-      console.log(content);
       const updatedMessages = [content, ...messages.slice(0)];
       handleMessages(updatedMessages);
       socket.emit("stop typing", user._id);

@@ -36,7 +36,6 @@ function SignUpForm() {
     }
 
     try {
-      console.log(formData);
       const response = await fetch("https://chathub-backend-v3lv.onrender.com/users", {
         method: "POST",
         headers : { "Content-Type": "application/json",

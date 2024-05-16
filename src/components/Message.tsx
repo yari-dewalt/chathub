@@ -46,7 +46,6 @@ function Message({ conversationData, handleConversationData, message }) {
       });
 
       const content = await response.json();
-      console.log(content);
       let editedMessage = message;
       editedMessage.text = editValue;
       editedMessage.edited = true;
@@ -68,7 +67,6 @@ function Message({ conversationData, handleConversationData, message }) {
     if (e.key == "Escape") {
       toggleEditMode();
     } else if (e.key == "Enter") {
-      console.log(editValue);
       e.preventDefault();
       editMessage();
     }
@@ -101,7 +99,6 @@ function Message({ conversationData, handleConversationData, message }) {
       });
 
       const content = await response.json();
-      console.log(content);
       socket.emit("delete message", message);
       socket.emit("notify message", user._id);
       socket.emit("notify message", correctUser._id);

@@ -67,7 +67,6 @@ function DirectMessage() {
 
         let content: Conversation = await response.json();
         content.messages = content.messages.reverse();
-        console.log(content);
         setConversationData(content);
         setMessages(content.messages);
         socket.emit("join conversation", content._id);

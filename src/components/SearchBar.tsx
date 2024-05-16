@@ -30,7 +30,6 @@ function SearchBar({ handleSearchResults }) {
 
       const content = await response.json();
       const filteredContent = content.filter((u) => u._id !== user._id);
-      console.log(filteredContent);
       handleSearchResults(filteredContent);
     } catch (error) {
       console.log(error);

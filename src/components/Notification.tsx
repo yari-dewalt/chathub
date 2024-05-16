@@ -49,7 +49,6 @@ function Notification({ notification, notifications, handleNotifications }) {
       });
 
       const content = await response.json();
-      console.log(content);
     } catch (error) {
       console.error("Error deleting notification:", error);
     }
@@ -75,7 +74,6 @@ function Notification({ notification, notifications, handleNotifications }) {
       });
 
       const content = await response.json();
-      console.log(content);
       socket.emit("notify general", notification.user._id);
       socket.emit("notify general", user._id); // To refresh our friends list on home.
     } catch (error) {
@@ -103,7 +101,6 @@ function Notification({ notification, notifications, handleNotifications }) {
       });
 
       const content = await response.json();
-      console.log(content);
       socket.emit("notify general", notification.user._id);
     } catch (error) {
       console.error("Error declining friend request:", error);

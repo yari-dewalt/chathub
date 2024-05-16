@@ -47,10 +47,9 @@ function User() {
         });
 
         const content: User = await response.json();
-        console.log(content);
         setUserData(content);
       } catch (error) {
-        console.error("Error fetching articles:", error);
+        console.error("Error fetching user data:", error);
       }
       setLoading(false);
     }
@@ -79,7 +78,6 @@ function User() {
       });
 
       const content = await response.json();
-      console.log(content);
       socket.emit("notify general", userData._id);
     } catch (error) {
       console.log(error);
@@ -103,7 +101,6 @@ function User() {
       });
 
       const content = await response.json();
-      console.log(content);
     } catch (error) {
       console.log(error);
     }
@@ -124,7 +121,6 @@ function User() {
       });
       
       const content = await response.json();
-      console.log(content);
     } catch (error) {
       console.log(error);
     }
@@ -147,7 +143,6 @@ function User() {
       });
 
       const content = await response.json();
-      console.log(content);
     } catch (error) {
       console.log(error);
     }
@@ -172,9 +167,6 @@ function User() {
       }
 
       const content = await response;
-      console.log(content);
-
-      //window.location.reload();
     } catch (error) {
       console.log(error);
     }

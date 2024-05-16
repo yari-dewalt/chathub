@@ -50,7 +50,6 @@ function SideNav() {
         });
 
         const content: Conversation[] = await response.json();
-        console.log(content);
         setConversations(content);
       } catch (error) {
         console.error("Error fetching conversations:", error);

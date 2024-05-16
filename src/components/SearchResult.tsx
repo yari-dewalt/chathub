@@ -39,7 +39,6 @@ function SearchResult({ resultUser, messageSearch, handleSelectedUser, isSelecte
       });
 
       const content = await response.json();
-      console.log(content);
     } catch (error) {
       console.log(error);
     }
@@ -63,7 +62,6 @@ function SearchResult({ resultUser, messageSearch, handleSelectedUser, isSelecte
       });
 
       const content = await response.json();
-      console.log(content);
     } catch (error) {
       console.log(error);
     }

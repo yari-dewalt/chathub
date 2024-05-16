@@ -30,7 +30,6 @@ function Home() {
         });
 
         const content: User = await response.json();
-        console.log(content);
         setUserData(content);
         setUser(content);
         localStorage.setItem("user", JSON.stringify(content));

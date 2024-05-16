@@ -78,8 +78,6 @@ function Chat() {
         model: "gpt-3.5-turbo",
         messages: history
       });
-      console.log(result);
-      console.log(result.choices[0].message);
       setIsLoading(false);
       let newMessage = { owner: "assistant", text: result.choices[0].message.content };
       setMessages(prevMessages => [newMessage, ...prevMessages]);

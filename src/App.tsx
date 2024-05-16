@@ -41,7 +41,6 @@ function App() {
     socket.connect();
     if (user !== null) {
       socket.emit("assign id", user._id);
-      console.log(`assigning id: ${user._id}`);
     }
 
     return () => {

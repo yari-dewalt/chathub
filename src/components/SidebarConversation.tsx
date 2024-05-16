@@ -38,7 +38,6 @@ function SidebarConversation({ conversation, selected, conversations, handleConv
       });
 
       const content = await response.json();
-      console.log(content);
 
       if (window.location.pathname.includes(conversation._id))
         navigate("/");
