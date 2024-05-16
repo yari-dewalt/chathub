@@ -4,6 +4,7 @@
 <h2>Features</h2>
 <ul>
     <li><b>Real-time messaging:</b> Chat with friends and other users instantly and in real-time.</li>
+    <li><b>Functional messaging:</b> Send text as well as images with your messages while also being able to go back and edit/delete them.</li>
     <li><b>Profile Customization:</b> Upload a profile picture and change your about me section!</li>
     <li><b>Search Functionality:</b> Easily find users to add as friends or message through the search feature.</li>
     <li><b>Notification system:</b> Stay informed with the instantaneous notification system.</li>
