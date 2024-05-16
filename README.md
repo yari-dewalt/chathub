@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://yari-dewalt-chathub.netlify.app">ChatHub</a></h1>
 <h2>About</h2>
-<p></p>
+<p>ChatHub is a messaging platform project based off of Discord. Supported by a REST API backend (Note: The backend is hosted by a free service meaning initial load times can be long if it has been sleeping), one can utilize all of the features of a typical messaging app. Add friends, customize your profile, and message other users.</p>
 <h2>Features</h2>
 <ul>
     <li><b>Real-time messaging:</b> Chat with friends and other users instantly and in real-time.</li>
