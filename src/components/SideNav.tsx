@@ -89,7 +89,7 @@ function SideNav() {
               <img src={AddIcon} className="w-4 invert opacity-50 group-hover:hover:opacity-85"></img>
             </button>
           </div>
-          <div className="flex flex-col gap-1 grow overflow-y-scroll">
+          <div className="flex flex-col gap-1 grow overflow-y-auto">
             {conversations.map((conversation) => 
             (<SidebarConversation key={conversation._id} conversation={conversation} selected={selectedConversationId === conversation._id} conversations={conversations} handleConversations={handleConversations}/>)
             )}
