@@ -9,6 +9,7 @@ import DirectMessage from "./pages/DirectMessage";
 import User from "./pages/User";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
+import Error from "./pages/Error";
 
 import { socket } from "./socket";
 import { createContext, useState, useEffect } from "react";
@@ -68,8 +69,6 @@ function App() {
     fetchUserData();
   }, []);
 
-  //TODO: Add Error Route
-
   return (
     <UserContext.Provider value={{ user, setUser, token, setToken }}>
       <div className="flex min-h-screen bg-neutral-700">
@@ -83,6 +82,7 @@ function App() {
             <Route path="/users/:userId" element={user ? <User/> : <Navigate to="/login"/>}/>
             <Route path="/login" element={!user ? <LogIn/> : <Navigate to="/"/>}/>
             <Route path="/signup" element={!user ? <SignUp/> : <Navigate to="/"/>}/>
+            <Route path="*" element={<Error/>}/>
           </Routes>
         </Router>
       </div>
